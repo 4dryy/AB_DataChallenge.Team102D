@@ -28,13 +28,13 @@ We continue with the project even if not selected for the official challenge. We
 
 ## Iteration-1 Pipeline (WBS-aligned)
 
-### 1.2.4.1 Data Understanding & Acquisition
-- Load and validate the provided dataset (`data/dataset_sample.parquet`)
-- Generate synthetic fallback data if needed (2022-2024 hourly data for 4 municipalities)
-- Summarize data characteristics by municipality
+### 1. Data Understanding & Acquisition
+- Load and validate the provided dataset (`data/dataset_sample.csv`)
+- Analyze data quality and characteristics
+- Summarize data characteristics by policy
 - Identify data quality issues and anomalies
 
-### 1.2.4.2 Feature Definition & Exploration Plan
+### 2. Feature Definition & Exploration Plan
 - Define candidate feature families for anomaly detection
 - Create comprehensive EDA (Exploratory Data Analysis) plan
 - Establish data cleaning rules and preprocessing requirements
