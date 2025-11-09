@@ -1,0 +1,242 @@
+[
+  {
+    "name": "polissa_id",
+    "description": "Core/derived field: polissa_id",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "num_serie_contador",
+    "description": "Core/derived field: num_serie_contador",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "datetime",
+    "description": "Core/derived field: datetime",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "year",
+    "description": "Core/derived field: year",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "month",
+    "description": "Core/derived field: month",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "dayofweek",
+    "description": "Core/derived field: dayofweek",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "hour",
+    "description": "Core/derived field: hour",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "codi_anomalia",
+    "description": "Core/derived field: codi_anomalia",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "data_inici",
+    "description": "Core/derived field: data_inici",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "data_fi",
+    "description": "Core/derived field: data_fi",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "period_hours",
+    "description": "Core/derived field: period_hours",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "y_anom",
+    "description": "Core/derived field: y_anom",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "consumption",
+    "description": "Core/derived field: consumption",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "flag_zero_consumption",
+    "description": "Core/derived field: flag_zero_consumption",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "flag_negative_consumption",
+    "description": "Core/derived field: flag_negative_consumption",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "cons_lag1",
+    "description": "Core/derived field: cons_lag1",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "cons_lag2",
+    "description": "Core/derived field: cons_lag2",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "delta1",
+    "description": "Core/derived field: delta1",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "delta2",
+    "description": "Core/derived field: delta2",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "meter_mean",
+    "description": "Core/derived field: meter_mean",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "meter_std",
+    "description": "Core/derived field: meter_std",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "cons_z_meter",
+    "description": "Core/derived field: cons_z_meter",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_mean",
+    "description": "Rolling mean over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_std",
+    "description": "Rolling std over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_min",
+    "description": "Rolling min over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_max",
+    "description": "Rolling max over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_zero_ratio",
+    "description": "Rolling zero_ratio over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll3_neg_ratio",
+    "description": "Rolling neg_ratio over last 3 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_mean",
+    "description": "Rolling mean over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_std",
+    "description": "Rolling std over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_min",
+    "description": "Rolling min over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_max",
+    "description": "Rolling max over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_zero_ratio",
+    "description": "Rolling zero_ratio over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll12_neg_ratio",
+    "description": "Rolling neg_ratio over last 12 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_mean",
+    "description": "Rolling mean over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_std",
+    "description": "Rolling std over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_min",
+    "description": "Rolling min over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_max",
+    "description": "Rolling max over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_zero_ratio",
+    "description": "Rolling zero_ratio over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  },
+  {
+    "name": "roll24_neg_ratio",
+    "description": "Rolling neg_ratio over last 24 readings (excluding current).",
+    "dtype": "numeric",
+    "grain": "reading"
+  }
+]
