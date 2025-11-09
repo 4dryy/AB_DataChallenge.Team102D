@@ -1,0 +1,15 @@
+{
+  "rows": 25977,
+  "n_features": 24,
+  "has_label": false,
+  "splits": {
+    "train": 18139,
+    "test": 4967,
+    "valid": 2871
+  },
+  "paths": {
+    "train": "Xy_train.csv",
+    "valid": "Xy_valid.csv",
+    "test": "Xy_test.csv"
+  }
+}

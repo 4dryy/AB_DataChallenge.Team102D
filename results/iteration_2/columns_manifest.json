@@ -1,0 +1,39 @@
+{
+  "features": [
+    "cons_lag2",
+    "roll24_zero_ratio",
+    "roll3_max",
+    "roll24_mean",
+    "flag_anom_32768",
+    "cons_z_meter",
+    "roll12_mean",
+    "delta2",
+    "period_hours",
+    "consumption",
+    "delta1",
+    "roll24_min",
+    "roll24_std",
+    "roll3_zero_ratio",
+    "roll12_max",
+    "roll12_std",
+    "roll3_std",
+    "flag_zero_consumption",
+    "roll24_max",
+    "roll3_min",
+    "roll12_min",
+    "cons_lag1",
+    "roll3_mean",
+    "roll12_zero_ratio"
+  ],
+  "label": "y_anom",
+  "id_col": "num_serie_contador",
+  "time_cols": [
+    "datetime",
+    "data_inici",
+    "data_fi",
+    "year",
+    "month",
+    "dayofweek",
+    "hour"
+  ]
+}
