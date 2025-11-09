@@ -1,0 +1,9 @@
+{
+  "flags_added": [
+    "flag_negative_consumption",
+    "flag_zero_consumption",
+    "flag_anom_32768",
+    "flag_anom_163840"
+  ],
+  "rows_dropped": 0
+}
