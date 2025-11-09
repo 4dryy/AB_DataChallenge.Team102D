@@ -1,0 +1,10 @@
+{
+  "n_total_numeric": 29,
+  "n_after_basic_filters": 25,
+  "n_after_redundancy": 24,
+  "n_selected": 24,
+  "model": "synthetic_from_univariate",
+  "redundancy_threshold": 0.95,
+  "id_col": "num_serie_contador",
+  "label": "y_anom"
+}
