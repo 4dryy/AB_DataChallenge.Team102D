@@ -1,0 +1,10 @@
+{
+  "random_state": 42,
+  "train_size": 0.7,
+  "valid_size": 0.15,
+  "max_missing_ratio": 0.4,
+  "max_corr": 0.95,
+  "rf_n_estimators": 200,
+  "rf_max_depth": 8,
+  "top_k_features": 50
+}

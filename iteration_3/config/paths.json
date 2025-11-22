@@ -1,0 +1,9 @@
+{
+  "dataset2_raw": "../data/repte_consums_anomals.csv",
+  "results_root": "./results",
+  "cleaned_dir": "./results/cleaned",
+  "features_dir": "./results/features",
+  "selected_dir": "./results/selected",
+  "prepared_dir": "./results/prepared",
+  "models_dir": "./results/models"
+}
