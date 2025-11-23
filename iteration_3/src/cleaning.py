@@ -104,24 +104,21 @@ def save_cleaned_outputs(
     Save cleaned dataset and changes summary into out_dir.
 
     Produces:
-    - {out_dir}/{base_name}.csv
-    - {out_dir}/{base_name}.parquet (if possible)
-    - {out_dir}/{base_name}_cleaning_changes.json
+    - {base_name}.parquet
+    - {base_name}_cleaning_changes.json
     """
+
     os.makedirs(out_dir, exist_ok=True)
 
-    csv_path = os.path.join(out_dir, f"{base_name}.csv")
     parquet_path = os.path.join(out_dir, f"{base_name}.parquet")
     json_path = os.path.join(out_dir, f"{base_name}_cleaning_changes.json")
 
-    clean_df.to_csv(csv_path, index=False)
-    try:
-        clean_df.to_parquet(parquet_path, index=False)
-    except Exception as e:
-        print(f"[warn] Could not write parquet: {e}")
+    # Save Parquet
+    clean_df.to_parquet(parquet_path, index=False)
 
+    # Save JSON summary
     with open(json_path, "w") as f:
         json.dump(changes, f, indent=2)
 
-    print(f"[ok] Saved cleaned dataset to: {csv_path}")
+    print(f"[ok] Saved cleaned parquet to: {parquet_path}")
     print(f"[ok] Saved cleaning summary to: {json_path}")
