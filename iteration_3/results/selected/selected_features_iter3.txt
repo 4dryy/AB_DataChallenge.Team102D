@@ -1,0 +1,10 @@
+CODI_ANOMALIA
+period_hours
+meter_std
+meter_mean
+flag_anom_163840
+cons_z_meter
+flag_anom_32768
+CONSUMO_REAL
+cons_lag1
+delta1
