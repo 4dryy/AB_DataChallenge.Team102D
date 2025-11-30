@@ -1,104 +1,186 @@
-# AB Data Challenge – Team 102.D
+# 🚰 AB Data Challenge – Team 102.D  
+### **Detecció de Consums Anòmals (Aigües de Barcelona)**
 
-**Course:** Project Management  
+**Course:** Project Management (UPF – EUTOPIA Learning Unit)  
 **Team:** 102.D  
-**Project:** Detecció de Consums Anòmals (Aigües de Barcelona Data Challenge)
+**Academic Year:** 2025–2026  
 
-## Project Description
+---
 
-This project focuses on anomaly detection in water consumption data for Aigües de Barcelona. The goal is to develop a robust system capable of identifying unusual consumption patterns that may indicate leaks, meter malfunctions, or other anomalies in the water distribution network.
-
-## Context
-
-We continue with the project even if not selected for the official challenge. We will use the provided `data/dataset_sample.parquet` file or implement a synthetic data fallback to ensure project continuity and learning objectives.
-
-## Objectives / Success Criteria
-
-- **Timely Delivery:** Complete Iteration-1 within the specified timeframe
-- **Quality Documentation:** Maintain comprehensive documentation throughout the project
-- **Anomaly Detection Performance:** Achieve ≥90% recall with <10% false positive rate (placeholder target)
-- **Technical Excellence:** Deliver clean, maintainable code with proper validation
-
-## Constraints / Assumptions
-
-- **Budget:** No budget allocated for external tools or services
-- **Data Access:** Limited to sample dataset provided
-- **Scope:** Prototype-level implementation for learning and demonstration purposes
-- **Timeline:** Iteration-based development approach
-
-## Iteration-1 Pipeline (WBS-aligned)
-
-### 1. Data Understanding & Acquisition
-- Load and validate the provided dataset (`data/dataset_sample.csv`)
-- Analyze data quality and characteristics
-- Summarize data characteristics by policy
-- Identify data quality issues and anomalies
-
-### 2. Feature Definition & Exploration Plan
-- Define candidate feature families for anomaly detection
-- Create comprehensive EDA (Exploratory Data Analysis) plan
-- Establish data cleaning rules and preprocessing requirements
-- Plan feature engineering approach for Iteration 2
-
-## Stakeholders
-
-- **Team 102.D:** Primary development team
-- **Course Instructors:** Project guidance and evaluation
-- **Aigües de Barcelona:** Data provider and potential end-user
-- **Academic Community:** Knowledge sharing and peer review
-
-## Risk Snapshot
-
-| Risk | Impact | Probability | Strategy |
-|------|--------|-------------|----------|
-| Data Quality Issues | High | Medium | Implement robust validation and synthetic fallback |
-| Limited Dataset Size | Medium | High | Use synthetic data generation and feature engineering |
-| Technical Complexity | Medium | Medium | Iterative development with clear documentation |
-| Timeline Constraints | High | Low | Agile approach with clear milestones |
-| Performance Requirements | Medium | Medium | Start with baseline and iterate for optimization |
-
-## How to Run
-
-1. Open both notebooks in the `iteration_1/` directory:
-   - `01_data_understanding.ipynb` - Data loading, validation, and initial analysis
-   - `02_feature_plan.ipynb` - Feature definition and EDA planning
-
-2. Execute the notebooks in order to follow the Iteration-1 pipeline
-
-3. Review the conclusions and next steps outlined in each notebook
-
-## Repository Structure
+## 🗂 Repository Structure
 
 ```
-AB_DataChallenge.Team102D/
-├── data/                               # Data storage
-│   └── dataset_sample.parquet          # Sample dataset for analysis
-├── docs/                               # Project documentation
+├── .vscode/
+│
+├── docs/                                 # PM Deliverables
+│   ├── Team102D.Follow-upRegister.v0.1.pdf
 │   ├── Team102D.ProjectCharter.v0.0.pdf
-│   ├── Team102D.ProjectStakeholderMatrix.v.0.1 - Stakeholder Matrix.pdf
-│   ├── Team102D.ProjectWorkPlan.v1.4.docx.pdf
-│   └── Team102D.Follow-upRegister.v0.1 - Risk.pdf
-├── iteration_1/                        # Iteration 1 implementation
-│   ├── 01_data_understanding.ipynb    # Data analysis and validation
-│   └── 02_feature_plan.ipynb          # Feature planning and EDA
-├── iteration_2/                        # Iteration 2 implementation (future)
-│   └── (to be implemented)
-├── iteration_3/                        # Iteration 3 implementation (future)
-│   └── (to be implemented)
-├── models/                             # Model storage (future)
-│   └── (to be implemented)
-├── results/                            # Results and outputs (future)
-│   └── (to be implemented)
-├── .gitignore                          # Git ignore rules
-└── README.md                           # This file
+│   ├── Team102D.ProjectStakeholderMatrix.v0.1.pdf
+│   └── Team102D.ProjectWorkPlan.v1.4.pdf
+│
+├── iteration_1/                           # Iteration 1 – Understanding & Planning
+│   ├── 01_data_understanding.ipynb
+│   └── 02_feature_plan.ipynb
+│
+├── iteration_2/                           # Iteration 2 – FE + Evaluation
+│   ├── 01_iter2_data_analysis.ipynb
+│   ├── 02_iter2_feature_engineering.ipynb
+│   ├── 03_iter2_feature_evaluation.ipynb
+│   ├── 04_iter2_prelim_dataset_prep.ipynb
+│   └── 05_iter2_demonstration_increment.ipynb
+│
+├── iteration_3/                           # Iteration 3 – Final Pipeline
+│   ├── config/
+│   │   ├── params.json
+│   │   └── paths.json
+│   │
+│   ├── notebooks/
+│   │   ├── 01_iter3_data_cleaning.ipynb
+│   │   ├── 02_iter3_feature_engineering.ipynb
+│   │   ├── 03_iter3_feature_selection.ipynb
+│   │   ├── 04_iter3_dataset_preparation.ipynb
+│   │   ├── 05_iter3_model_training.ipynb
+│   │   └── 06_iter3_product_pipeline_demo.ipynb
+│   │
+│   ├── results/
+│   │   ├── models/
+│   │   │   └── model_iter3_rf.joblib
+│   │   ├── prepared/
+│   │   │   ├── X_train.npy
+│   │   │   ├── X_valid.npy
+│   │   │   ├── X_test.npy
+│   │   │   ├── y_train.npy
+│   │   │   ├── y_valid.npy
+│   │   │   └── y_test.npy
+│   │   └── selected/
+│   │       └── selected_features_iter3.txt
+│
+├── src/                                   # Python Package
+│   ├── __init__.py
+│   ├── cleaning.py
+│   ├── preprocessing.py
+│   ├── features.py
+│   ├── selection.py
+│   ├── splitting.py
+│   └── model_utils.py
+│
+├── .gitignore
+└── README.md                              # This file
 ```
 
-### Directory Descriptions
+---
 
-- **`data/`**: Contains all datasets used in the project
-- **`docs/`**: Project documentation including charters, stakeholder matrices, work plans, and risk registers
-- **`iteration_1/`**: Complete implementation of Iteration 1 (Data Understanding & Feature Planning)
-- **`iteration_2/`**: Future implementation of Iteration 2 (Feature Engineering & Model Development)
-- **`iteration_3/`**: Future implementation of Iteration 3 (Model Optimization & Deployment)
-- **`models/`**: Future storage for trained models and model artifacts
-- **`results/`**: Future storage for analysis results, visualizations, and reports
+## ⚙️ Installation
+
+```bash
+python -m venv venv
+venv\Scripts\activate    # Windows
+source venv/bin/activate   # Mac/Linux
+pip install -r requirements.txt
+```
+
+If no requirements file is provided:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib seaborn joblib jupyter
+```
+
+---
+
+## 🚀 How to Run the Pipeline
+
+### Option A – Notebook Workflow
+
+Navigate to `iteration_3/notebooks/` and run notebooks in order:
+
+1. 01_iter3_data_cleaning  
+2. 02_iter3_feature_engineering  
+3. 03_iter3_feature_selection  
+4. 04_iter3_dataset_preparation  
+5. 05_iter3_model_training  
+6. 06_iter3_product_pipeline_demo  
+
+Workflow:  
+📥 ingest → 🧹 clean → 🧪 FE → 🔎 FS → 🗂 split → 🤖 train → 📊 demo
+
+---
+
+### Option B – Python Module Workflow
+
+```python
+from src.preprocessing import load_and_clean
+from src.features import generate_features
+from src.selection import select_features
+from src.model_utils import train_isolation_forest
+
+df = load_and_clean("path/to/input.parquet")
+X = generate_features(df)
+X_sel = select_features(X)
+model = train_isolation_forest(X_sel)
+```
+
+---
+
+## 🔍 Methodology Summary
+
+### Iteration 1 – Foundations
+- Data understanding  
+- EDA planning  
+- Feature plan  
+
+### Iteration 2 – Development
+- Feature engineering  
+- Feature evaluation  
+- Dataset preparation  
+- Demo  
+
+### Iteration 3 – Final Prototype
+- Cleaning pipeline  
+- Feature pipeline  
+- Feature selection  
+- Splits  
+- Model training  
+- Demo  
+
+---
+
+## 📊 Model Overview
+
+- Algorithm: Isolation Forest  
+- Type: Unsupervised anomaly detection  
+- Justification: No labeled anomalies available  
+- Outputs: anomaly score, binary flag  
+- Model: `model_iter3_rf.joblib`
+
+---
+
+## 🧩 Key Features
+
+- Dataset-agnostic pipeline  
+- Modular Python package  
+- Synthetic fallback dataset  
+- Three-iteration agile workflow  
+- Config-driven architecture  
+- Full PM documentation  
+
+---
+
+## 👥 Team Members
+
+- Adrià Cortés  
+- Joan Company  
+- Guillem García  
+- Marc de Los Aires  
+- Jofre Geli  
+
+---
+
+## 📄 License
+
+Academic project for the UPF EUTOPIA Project Management course.
+
+---
+
+## 📬 Contact
+
+Team 102.D – Universitat Pompeu Fabra
