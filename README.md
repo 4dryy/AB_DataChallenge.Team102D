@@ -76,15 +76,8 @@
 python -m venv venv
 venv\Scripts\activate    # Windows
 source venv/bin/activate   # Mac/Linux
-pip install -r requirements.txt
-```
-
-If no requirements file is provided:
-
-```bash
 pip install numpy pandas scikit-learn matplotlib seaborn joblib jupyter
 ```
-
 ---
 
 ## 🚀 How to Run the Pipeline
@@ -154,17 +147,6 @@ model = train_isolation_forest(X_sel)
 
 ---
 
-## 🧩 Key Features
-
-- Dataset-agnostic pipeline  
-- Modular Python package  
-- Synthetic fallback dataset  
-- Three-iteration agile workflow  
-- Config-driven architecture  
-- Full PM documentation  
-
----
-
 ## 👥 Team Members
 
 - Adrià Cortés  
@@ -174,13 +156,5 @@ model = train_isolation_forest(X_sel)
 - Jofre Geli  
 
 ---
-
-## 📄 License
-
-Academic project for the UPF EUTOPIA Project Management course.
-
----
-
-## 📬 Contact
 
 Team 102.D – Universitat Pompeu Fabra
